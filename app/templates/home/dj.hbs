@@ -18,9 +18,12 @@
     <h2>{{t "dj.podcasts"}}</h2>
     {{#each model.tracks as |track|}}
       {{podcast-track
-        cdnUrl=track.cdnUrl title=track.title labels=track.labels
+        cdnUrl=track.cdnUrl
+        title=track.title
+        labels=track.labels
         scheduledShow=track.scheduledShow
-        selectLabel=(action "browseLabel")}}
+        selectLabel=(action "browseLabel")
+      }}
     {{/each}}
   </div>
   <div class="row">

@@ -2,6 +2,8 @@
   "extends": "stylelint-config-standard",
   "rules": {
     "indentation": 2,
+    "block-indentation":2,
+    "no-console":false,
     "string-quotes": "single",
     "no-duplicate-selectors": true,
     "color-hex-case": "lower",
